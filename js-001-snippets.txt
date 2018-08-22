@@ -1,5 +1,6 @@
 /**
  * file: snippets.js
+ * date: 20180822
  **/
 
 // dato
