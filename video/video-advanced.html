@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Advanced Video: Load via Object</title>
+</head>
+<body>
+  <h1>Load videos via an object</h1>
+  <div id="videos"></div>
+  <script>
+    /**
+    * file: video-advanced.html
+    * purpose: a video object for multiple videos.
+    **/
+
+    // object via function constructor
+    let NewVid = function(movie) {
+      let vid = document.createElement('video');
+      vid.src = movie;
+      vid.controls = true;
+      vid.style.width = '100%';
+      vid.style.maxWidth = '800px';
+      vid.style.height = 'auto';
+      videos.appendChild(vid);
+    }
+
+    // use the object
+    NewVid('https://ia800300.us.archive.org/3/items/bb_snow_white/bb_snow_white_512kb.mp4');
+
+    // instantiate the movie object
+    let Bfilm = new NewVid('https://ia800300.us.archive.org/3/items/bb_snow_white/bb_snow_white_512kb.mp4');
+
+    // so you'll be able to loop out videos from an array
+  </script>
+</body>
+</html>
