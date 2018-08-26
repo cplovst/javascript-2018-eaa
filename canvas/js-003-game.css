@@ -1,0 +1,16 @@
+/**
+ * file: js-003-game.css
+ **/
+#dice {
+  width: 100px;
+  height: 100px;
+  border: solid black 2px;
+}
+
+#board {
+  border: solid black 1px;
+}
+
+#btn_throw {
+  background-color: orange;
+}
