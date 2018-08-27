@@ -8,29 +8,40 @@
 </head>
 <body>
   <h1>Load videos via an object</h1>
+
+  <!-- the videos will appear in #videos -->
   <div id="videos"></div>
+
   <script>
     /**
     * file: video-advanced.html
     * purpose: a video object for multiple videos.
+    * why is it advanced? You can reuse objects again and again
     **/
 
     // object via function constructor
     let NewVid = function(movie) {
+      // create a <video>
       let vid = document.createElement('video');
+
       vid.src = movie;
       vid.controls = true;
       vid.style.width = '100%';
-      vid.style.maxWidth = '800px';
+      vid.style.maxWidth = '400px';
       vid.style.height = 'auto';
+      vid.style.margin = '25px';
+
+      // append to <div id="videos">
       videos.appendChild(vid);
     }
 
-    // use the object
-    NewVid('https://ia800300.us.archive.org/3/items/bb_snow_white/bb_snow_white_512kb.mp4');
+    let bettyB = 'https://ia800300.us.archive.org/3/items/bb_snow_white/bb_snow_white_512kb.mp4';
 
-    // instantiate the movie object
-    let Bfilm = new NewVid('https://ia800300.us.archive.org/3/items/bb_snow_white/bb_snow_white_512kb.mp4');
+    // use the object
+    NewVid( bettyB );
+
+    // a new instance the movie object
+    let Bfilm = new NewVid( bettyB );
 
     // so you'll be able to loop out videos from an array
   </script>

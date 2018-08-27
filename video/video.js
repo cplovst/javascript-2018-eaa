@@ -12,8 +12,5 @@ let MyVideo = function () {
   this.vid.controls = true;
 }
 
-
-
-
 // af DOM load run the myVideo function
 window.addEventListener('load', MyVideo);
