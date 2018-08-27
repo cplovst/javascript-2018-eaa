@@ -2,181 +2,62 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>file: js-001.html</title>
-
-  <script>
-    'use strict';
-
-    // variabel
-    var budskabet = 'Mojn!';
-
-    // dato
-    // liste
-    // loop
-    // Åbningstider - øvelse
-
-    function typeIt() {
-      let tekst = document.getElementById('theText');
-      tekst.innerHTML = budskabet;
-      tekst.style = 'color:green;font-size:7rem;font-family:arial';
-      console.log('ja, funktionen typeIt loades ....');
-    }
-
-    // fire off the function when the window is loaded
-    window.addEventListener('load', typeIt);
-  </script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>file: js-001.html</title>
 </head>
 
 <body>
 
-  <article>
-    <h2 id="headline">file: JavaScript01.html</h2>
-    <p class="text">This is the famous "Hello World JavaScript" experience.</p>
-    <div id="theText"></div>
-  </article>
-
-  <script>
-    /**
-     * fil: navn
-     * formål: jeg vil lære JavaScript
-     * dato: 2018-08-24
-     **/
-
-    // Variabler
-    var kat = '<p id="minKat">Garfield\'s</p>'; // streng, string
-    kat = 23; // tal
-    var boo = true; // boolean
-
-    var en = 123456;
-    var to = 2789;
-    var sum = en * to;
-
-    // beregn en BMI
-    var person = 'Donald Duck';
-    var hoejde = 140;
-    var vaegt = 70;
-
-    var bmi = vaegt / (hoejde * hoejde);
-
-    console.log('Hej verden!');
-    console.log( bmi );
-
-    var soldat = 'Tinsoldaten';
-    var kaelling = 'heks';
-    var indledning = 'Der var engang';
-    console.log(indledning + ' ' + ' ' + soldat + ' ' + kaelling);
-
-    // tinsoldaten har en BMI på XX
-    console.log( soldat + ' har en BMI på: ' + bmi );
-
-    //var navn = prompt('Hvad hedder du?');
-    //document.write( 'Hej ' + navn);
-
-    // liste, array
-    var husk = [
-      'abe',
-      'kat',
-      'mælk',
-      23
-    ];
-
-    // loops, for (andre former: while, for in ...)
-    // n++ => n=n+1
-    /*
-    for (var n = 0; n <= 10000; n++) {
-      console.log( 'Nu er n = ' + n );
-    }
-    */
-
-    // nu fra en liste
-    console.log( husk[3] );
-
-    // hele listen
-    for (var n = 0; n < husk.length ; n++) {
-      console.log( husk[n] );
-      document.write( '<p>' + husk[n] + '</p>');
-    }
-
-
-
-
-
-
-
-
-
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <article>
+        <h2 id="headline">file: JavaScript01.html</h2>
+        <p class="text">This is the famous "Hello World JavaScript" experience.</p>
+        <div id="theText"></div>
+    </article>
+
+    <script>
+        
+        /**
+         * fil: js-001.html
+         * formål: jeg vil lære JavaScript
+         * dato: 2018-08-24
+         **/
+        
+        // variable: husk at 'xxxxx'
+        var bil = 'Hej verden "vil jeg lige sige"';
+        var mad = "ostemad";
+        var mitHTML = "<h1 id=\"minId\">";
+        
+        console.log( 'mitHTML variablen indeholder:' + mitHTML);
+        
+        //data typer
+        var tal = 21;
+        var andetTal = 22/7;
+        var regne = 2*(19+45/(3*5));
+        
+        //logik: sand el. falsk
+        var loegn = true; //booleans
+        var sandhed = false;
+        var passerDet = 4 > 72;
+        passerDet = tal > 0;
+        
+        // "21" != 21
+        var et = 21;
+        var to = "21";
+        var sum = et + to;
+        
+        //html streng
+        var h1 = '<h1 class="red">';
+        var teksten = 'Multimediedesigner';
+        var tekst2 = 'Hej med dig';
+        var tekst3 = 'Hvem er du?';
+        var h1x = '</h1>';
+        var samletTekst = h1 + teksten + ' ' + tekst2 + ' ' + tekst3 + h1x;
+        
+        
+
+    </script>
 
 </body>
 
