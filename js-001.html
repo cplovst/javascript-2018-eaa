@@ -17,46 +17,95 @@
     </article>
 
     <script>
-        
         /**
          * fil: js-001.html
          * formål: jeg vil lære JavaScript
          * dato: 2018-08-24
          **/
-        
+
         // variable: husk at 'xxxxx'
         var bil = 'Hej verden "vil jeg lige sige"';
         var mad = "ostemad";
         var mitHTML = "<h1 id=\"minId\">";
-        
-        console.log( 'mitHTML variablen indeholder:' + mitHTML);
-        
-        //data typer
+
+        console.log('mitHTML variablen indeholder:' + mitHTML);
+
+        // data typer
         var tal = 21;
-        var andetTal = 22/7;
-        var regne = 2*(19+45/(3*5));
-        
-        //logik: sand el. falsk
+        var andetTal = 22 / 7;
+        var regne = 2 * (19 + 45 / (3 * 5));
+
+        // logik: sand el. falsk
         var loegn = true; //booleans
         var sandhed = false;
         var passerDet = 4 > 72;
         passerDet = tal > 0;
-        
+
         // "21" != 21
         var et = 21;
         var to = "21";
         var sum = et + to;
-        
-        //html streng
+
+        // html streng
         var h1 = '<h1 class="red">';
         var teksten = 'Multimediedesigner';
         var tekst2 = 'Hej med dig';
         var tekst3 = 'Hvem er du?';
         var h1x = '</h1>';
         var samletTekst = h1 + teksten + ' ' + tekst2 + ' ' + tekst3 + h1x;
-        
-        
 
+        // skriv til en tag
+        var enId = document.getElementById("theText");
+        enId.innerHTML = samletTekst;
+
+        //listerne (array)
+        var husk = [
+            'abe',
+            'kuglepen',
+            'whiskey',
+            'lommeuld',
+            'kanon',
+            333,
+            345,
+            'Pirates of the Carribean'
+        ]
+
+        console.log(husk);
+
+        // loop (n++ : n=n+1) n-- giver 'virus'
+        /*
+        for (var n = 0; n < 99; n++) {
+            console.log(n);
+        }
+        */
+
+        /*
+        // et element fra listerne
+        console.log(husk[3]);
+        */
+
+        // loope arrayet ud
+        for (var n = 0; n < husk.length; n++); {
+            console.log(husk[n]);
+        }
+
+        // BMI beregner
+
+        // Navn?
+        var bminavn = prompt('Hva hejjer do lissom?');
+        console.log('Navn: ' + bminavn);
+        // Højde?
+        var hoejde = prompt('Hvor høj er du i meter?');
+        console.log('Højde: ' + hoejde);
+        // Vægt
+        var vaegt = prompt('Hvor meget vejer du?');
+        console.log('Vægt: ' + vaegt);
+        // Beregn BMI =
+        var bmi = vaegt / (hoejde*2);
+        console.log('BMI: ' + bmi);
+        // Avanceret: skriv tal og beregninger i DOM
+        // via document.getElementById("ID");
+        
     </script>
 
 </body>
